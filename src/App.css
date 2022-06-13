@@ -1,0 +1,49 @@
+.header{
+  width: 100%;
+  /* border: red solid; */
+  margin: 0 0 0 0;
+  background-color: bisque;
+  color: white;
+  background-image: linear-gradient(to right, rgb(255, 161, 20) , rgb(249, 249, 154));
+
+}
+
+
+.brewerieContainer{
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  border: rgb(171, 171, 171) solid;
+  min-width: 220px;
+  padding: 10px;
+  border-radius: 10px;
+
+  
+}
+
+.singleBrewerie{
+  border: none;
+  font-weight: bolder;
+  font-size: 15px;
+  background-color: rgba(240, 248, 255, 0);
+  padding: 6px 10px 6px 10px;
+  text-align: left;
+}
+#listAndDetailsContainer{
+  border: red solid;
+  display: flex;
+  justify-content: space-around;
+
+ 
+}
+.singleBrewerie:hover{
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 6px 10px 6px 10px;
+}
+
+.detailsContainer{
+  border: red solid;
+  height: 50vh;
+  width: 30vw;
+}

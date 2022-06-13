@@ -41,9 +41,9 @@ export default function Map(props) {
       <div>Map olis</div>
       <LoadScript googleMapsApiKey="AIzaSyA24d9fZWIHid1RGcM649JMkas26tC5Qvk">
       <GoogleMap
-                 mapContainerStyle={containerStyle}
-                 center={center}
-                 zoom={15}>
+          mapContainerStyle={containerStyle}
+          center={center}
+          zoom={15}>
                  <Marker position={{lat:center.lat, lng:center.lng}} 
                          animation={1}/>
                  

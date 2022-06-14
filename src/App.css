@@ -5,7 +5,7 @@
   background-color: bisque;
   color: white;
   background-image: linear-gradient(to right, rgb(255, 161, 20) , rgb(249, 249, 154));
-
+  padding: 8px 0 8px 10px;
 }
 
 
@@ -33,6 +33,7 @@
   border: red solid;
   display: flex;
   justify-content: space-around;
+  margin: 30px 0 0 0;
 
  
 }
@@ -43,7 +44,44 @@
 }
 
 .detailsContainer{
-  border: red solid;
+  border: rgb(116, 116, 116) solid;
+  border-radius: 10px;
+  padding: 15px;
   height: 50vh;
   width: 30vw;
+  line-height: 2px;
+}
+#addressEl{
+
+}
+
+#locationLineEl{
+  color: grey;
+}
+
+#breweryNameEl{
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  flex-wrap: nowrap;
+  border: red solid;
+  min-height: fit-content;
+  min-width: fit-content;
+  height: 40px;
+
+}
+#breweryNameEl h1{
+  margin: 0 0 0 0;
+}
+
+#emptyDetailsContainer{
+  border: rgb(198, 198, 198) solid;
+  border-radius: 10px;
+  padding: 15px;
+  height: 50vh;
+  width: 30vw;
+  line-height: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:rgb(171, 171, 171)
 }

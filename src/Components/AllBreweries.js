@@ -66,7 +66,8 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
     } else {
     }
 
-    // mapContainer
+//    create an array of keys from the select brewery object 
+// then whichever ones are undefined just show "url not currently available"
 
   return (
     <>
@@ -76,19 +77,22 @@ let handleMappingBreweries = allBreweries.map((brewery,i)=>{
         {handleMappingBreweries}
         </div>
 
-        <div className="detailsContainer">
-            <p>Name:{selectedBrewerie.name}</p>
-            <p>Street:{selectedBrewerie.street}</p>
-            <p>State:{selectedBrewerie.state}</p>
-            <p>ZIP:{selectedBrewerie.postal_code}</p>
-            <p>City:{selectedBrewerie.city}</p>
-            <p>url:<a href={selectedBrewerie.website_url} target="_blank">{selectedBrewerie.website_url}</a></p>
-        </div>
+        {/* <div className="detailsContainer">
+            <h1 id="breweryNameEl">Harlmem Brewerie{selectedBrewerie.name}</h1>
+            <p id="addressEl">123 Melrose st. Apt 353 {selectedBrewerie.street}</p>
+            <p id="locationLineEl">New York City, NY, 11206 {selectedBrewerie.city}, {selectedBrewerie.state}, {selectedBrewerie.postal_code}</p>
+               
+       
+            <p>www.google.com<a href={selectedBrewerie.website_url} target="_blank">{selectedBrewerie.website_url}</a></p>
+        </div> */}
 
         <Map coordinates={{
                 latitude:selectedBrewerie.latitude,
                 longitude:selectedBrewerie.longitude
                 }}/>
+        <div id="emptyDetailsContainer">
+            select a brewery
+        </div>
     </div>
     </>
   )
